@@ -6,15 +6,13 @@
 #    By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 15:25:02 by rmiralle          #+#    #+#              #
-#    Updated: 2017/11/13 15:25:04 by rmiralle         ###   ########.fr        #
+#    Updated: 2017/11/15 14:16:20 by rmiralle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-SRC = 	ft_strlen.c\
-		ft_strdup.c\
-		ft_alpha
+SRC = 	
 
 OBJ =	${SRC:c=o}
 
