@@ -6,7 +6,7 @@
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/15 14:17:37 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/11/15 14:59:44 by rmiralle         ###   ########.fr       */
+/*   Updated: 2017/11/16 23:57:10 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ char	*ft_strncpy(char *dst, const char *src, size_t n)
 		dst[i] = src[i];
 		i++;
 	}
+	dst[i] = '\0';
 	return (dst);
 }

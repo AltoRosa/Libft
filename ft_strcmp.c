@@ -6,7 +6,7 @@
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 18:35:53 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/11/15 17:50:00 by rmiralle         ###   ########.fr       */
+/*   Updated: 2017/11/16 23:49:50 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,5 @@ int		ft_strcmp(const char *s1, const char *s2)
 		i++;
 	if (s1[i] != s2[i])
 		return (s1[i] - s2[i]);
-	return (0);
-}
-
-int		main(void)
-{
-	printf("%d\n", ft_strcmp("aad", "aaa"));
 	return (0);
 }

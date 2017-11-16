@@ -6,11 +6,10 @@
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 12:23:00 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/11/13 12:23:03 by rmiralle         ###   ########.fr       */
+/*   Updated: 2017/11/17 00:05:58 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strdup(char *str)
@@ -26,5 +25,6 @@ char	*ft_strdup(char *str)
 		dst[i] = str[i];
 		i++;
 	}
+	dst[i] = '\0';
 	return (dst);
 }
