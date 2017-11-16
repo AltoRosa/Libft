@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/15 15:02:26 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/11/15 17:52:00 by rmiralle         ###   ########.fr       */
+/*   Created: 2017/11/15 17:31:35 by rmiralle          #+#    #+#             */
+/*   Updated: 2017/11/15 17:48:31 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+int		ft_tolower(int i)
 {
-	size_t i;
-
-	i = 0;
-	while (s1[i] && s2[i] && s1[i] == s2[i])
-		i++;
-	while (i < n)
-		return (s1[i] - s2[i]);
-	return (0);
+	while (i >= 65 && i <= 90)
+		i = i + 32;
+	return (i);
 }
