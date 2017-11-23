@@ -6,7 +6,7 @@
 #    By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 15:25:02 by rmiralle          #+#    #+#              #
-#    Updated: 2017/11/23 11:58:51 by rmiralle         ###   ########.fr        #
+#    Updated: 2017/11/23 16:20:11 by rmiralle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,7 @@ OBJ = ${SRC:c=o}
 all: $(NAME)
 
 OBJ : $(OBJ)
-	gcc -c $(SRC)
+	gcc -c -Wall -Wextra -Werror $(SRC)
 
 $(NAME) : $(OBJ)
 	ar rc $(NAME) $(OBJ)

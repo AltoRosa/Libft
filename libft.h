@@ -6,7 +6,7 @@
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/15 17:51:21 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/11/17 15:01:08 by rmiralle         ###   ########.fr       */
+/*   Updated: 2017/11/23 16:56:33 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void	*ft_memmove(void *dst, const void *src, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_strlen(char *str);
 char	*ft_strdup(char *str);
-char	*ft_strcpy(char *src, char *dst);
+char	*ft_strcpy(char *dst, char *src);
 char	*ft_strcat(char *dst, const char *src);
 char	*ft_strncat(char *dst, const char *src, size_t n);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
