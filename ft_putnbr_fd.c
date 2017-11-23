@@ -6,17 +6,22 @@
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 00:09:54 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/11/17 18:15:58 by rmiralle         ###   ########.fr       */
+/*   Updated: 2017/11/23 11:58:04 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
-		return (ft_putstr_fd(fd, "-2147483648"));
+	{
+		ft_putstr_fd("-2147483648", fd);
+		return ;
+	}
 	if (n < 0)
 	{
-		ft_putchar_fd(fd, '-');
+		ft_putchar_fd('-', fd);
 		n = n * (-1);
 	}
 	if (n >= 10)

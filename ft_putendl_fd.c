@@ -6,12 +6,14 @@
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 00:06:40 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/11/17 18:19:05 by rmiralle         ###   ########.fr       */
+/*   Updated: 2017/11/23 15:19:10 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_putendl_fd(char const *s, int fd)
 {
 	ft_putstr_fd(s, fd);
-	ft_putchar('\n');
+	ft_putchar_fd('\n', fd);
 }
