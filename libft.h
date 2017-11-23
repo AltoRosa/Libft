@@ -6,7 +6,7 @@
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/15 17:51:21 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/11/16 18:18:18 by rmiralle         ###   ########.fr       */
+/*   Updated: 2017/11/17 15:01:08 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ char	*ft_strstr(const char *haystack, const char *needle);
 char	*ft_strnstr(const char *s1, const char *s2, size_t len);
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-int		ft_atoi(const char *nb);
+int		ft_atoi(const char *s);
 int		ft_isalpha(int i);
 int		ft_isdigit(int i);
 int		ft_isalnum(int i);

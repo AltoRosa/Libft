@@ -6,10 +6,37 @@
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/15 16:13:13 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/11/16 12:08:35 by rmiralle         ###   ########.fr       */
+/*   Updated: 2017/11/23 11:20:46 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_atoi(const char *nb)
+#include "libft.h"
+
+int		ft_atoi(const char *s)
 {
+	int i;
+	int neg;
+	int nb;
+
+	i = 0;
+	neg = 1;
+	nb = 0;
+	while (s[i] == 32 || (s[i] >= 9 && s[i] <= 13))
+		i++;
+	if ((s[i] == '-') || (s[i] == '+'))
+	{
+		if (s[i] == '-')
+		{
+			neg = neg * (-1);
+			i++;
+		}
+		else
+			i++;
+	}
+	while (s[i] >= '0' && s[i] <= '9')
+	{
+		nb = (nb * 10) + s[i] - '0';
+		i++;
+	}
+	return (neg * nb);
 }
