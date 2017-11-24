@@ -6,7 +6,7 @@
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 00:09:54 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/11/23 16:15:09 by rmiralle         ###   ########.fr       */
+/*   Updated: 2017/11/24 15:54:27 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd((n % 10) + 48, fd);
 	}
 	else
-		ft_putchar_fd(fd, (n) + 48);
+		ft_putchar_fd((n) + 48, fd);
 }
