@@ -6,7 +6,7 @@
 #    By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 15:25:02 by rmiralle          #+#    #+#              #
-#    Updated: 2017/12/01 16:34:53 by rmiralle         ###   ########.fr        #
+#    Updated: 2017/12/01 20:37:54 by rmiralle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,14 +27,23 @@ SRC =	ft_atoi.c\
 		ft_putnbr_fd.c\
 		ft_putstr.c\
 		ft_putstr_fd.c\
+		ft_strcat.c\
+		ft_strncat.c\
 		ft_strchr.c\
+		ft_strclr.c\
 		ft_strcmp.c\
 		ft_strcpy.c\
 		ft_strdup.c\
+		ft_strequ.c\
+		ft_strnequ.c\
+		ft_striter.c\
+		ft_striteri.c\
+		ft_strjoin.c\
 		ft_strlen.c\
+		ft_strmap.c\
 		ft_strncmp.c\
 		ft_strncpy.c\
-		ft_strrchr.c\
+		ft_strnew.c\
 		ft_tolower.c\
 		ft_toupper.c
 
