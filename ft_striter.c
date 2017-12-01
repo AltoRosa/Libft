@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncy.c                                        :+:      :+:    :+:   */
+/*   ft_striter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/15 14:17:37 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/11/16 23:57:10 by rmiralle         ###   ########.fr       */
+/*   Created: 2017/12/01 18:00:10 by rmiralle          #+#    #+#             */
+/*   Updated: 2017/12/01 18:04:09 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncpy(char *dst, const char *src, size_t n)
+void	ft_striter(char *s, void (*f)(char *))
 {
-	size_t i;
+	int i;
 
 	i = 0;
-	while (i < n)
+	while (s[i])
 	{
-		dst[i] = src[i];
+		f(&s[i]);
 		i++;
 	}
-	dst[i] = '\0';
-	return (dst);
 }

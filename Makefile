@@ -6,7 +6,7 @@
 #    By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 15:25:02 by rmiralle          #+#    #+#              #
-#    Updated: 2017/11/24 22:40:07 by rmiralle         ###   ########.fr        #
+#    Updated: 2017/12/01 16:34:53 by rmiralle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ SRC =	ft_atoi.c\
 		ft_strdup.c\
 		ft_strlen.c\
 		ft_strncmp.c\
-		ft_strncy.c\
+		ft_strncpy.c\
 		ft_strrchr.c\
 		ft_tolower.c\
 		ft_toupper.c
