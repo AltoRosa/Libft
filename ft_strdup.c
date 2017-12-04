@@ -6,7 +6,7 @@
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 12:23:00 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/11/24 23:13:42 by rmiralle         ###   ########.fr       */
+/*   Updated: 2017/12/04 18:17:32 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ char	*ft_strdup(char *str)
 	i = 0;
 	if (!(dst = (char *)malloc(sizeof(char) * (ft_strlen(str) + 1))))
 		return (NULL);
+	ft_bzero(dst, (sizeof(char) * (ft_strlen(str) + 1)));
 	while (str[i])
 	{
 		dst[i] = str[i];
