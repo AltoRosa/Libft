@@ -6,7 +6,7 @@
 #    By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 15:25:02 by rmiralle          #+#    #+#              #
-#    Updated: 2017/12/01 20:37:54 by rmiralle         ###   ########.fr        #
+#    Updated: 2017/12/04 12:22:29 by rmiralle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRC =	ft_atoi.c\
 		ft_isascii.c\
 		ft_isdigit.c\
 		ft_isprint.c\
-		ft_memset.c\
+		ft_memalloc.c\
 		ft_putchar.c\
 		ft_putchar_fd.c\
 		ft_putendl.c\
@@ -41,9 +41,11 @@ SRC =	ft_atoi.c\
 		ft_strjoin.c\
 		ft_strlen.c\
 		ft_strmap.c\
+		ft_strmapi.c\
 		ft_strncmp.c\
 		ft_strncpy.c\
 		ft_strnew.c\
+		ft_strtrim.c\
 		ft_tolower.c\
 		ft_toupper.c
 
@@ -51,11 +53,15 @@ OBJ = ${SRC:c=o}
 
 all: $(NAME)
 
-OBJ : $(OBJ)
-	gcc -c -Wall -Wextra -Werror $(SRC)
+%.o: %.c
+	@printf "\rgcc -c -Wall -Wextra -Werror -o $@ $^                    "
+	@gcc -c -Wall -Wextra -Werror -o $@ $^
 
-$(NAME) : $(OBJ)
+$(NAME): $(OBJ)
+	@echo ""
 	ar rc $(NAME) $(OBJ)
+
+order:
 
 	@echo "\033[38;5;202m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\033[0m"
 	@echo "\033[38;5;202m++++++++++++++++++++++++++++++++++++++++++++++++///+++++++++++++++++++++++++++++++++++++++++++++++++\033[0m"
