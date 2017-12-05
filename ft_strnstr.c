@@ -1,27 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/16 19:48:24 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/12/05 11:33:05 by rmiralle         ###   ########.fr       */
+/*   Created: 2017/12/05 12:14:21 by rmiralle          #+#    #+#             */
+/*   Updated: 2017/12/05 12:33:46 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strnstr(const char *hay, const char *needle, size_t n)
 {
-	int	i;
+	size_t	i;
+	int		nb;
 
-	i = ft_strlen(s);
-	while (i >= 0)
+	i = 0;
+	nb = ft_strlen(needle);
+	if (hay == 0 || n == 0)
+		return (NULL);
+	if (needle == 0)
+		return ((char *)hay);
+	while (i < n - nb)
 	{
-		if (s[i] == c)
-			return ((char *)s + i);
-		i--;
+		if (ft_strncmp(hay + i, needle, nb) == 0)
+			return ((char *)hay + i);
+		i++;
 	}
 	return (NULL);
 }
