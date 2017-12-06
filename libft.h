@@ -6,7 +6,7 @@
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/15 17:51:21 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/12/05 16:00:14 by rmiralle         ###   ########.fr       */
+/*   Updated: 2017/12/06 17:21:32 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,5 +70,6 @@ int		ft_isascii(int i);
 int		ft_isprint(int i);
 int		ft_toupper(int i);
 int		ft_tolower(int i);
+int		ft_countword(char *s, char c);
 
 #endif

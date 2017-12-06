@@ -6,7 +6,7 @@
 #    By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 15:25:02 by rmiralle          #+#    #+#              #
-#    Updated: 2017/12/04 20:30:47 by rmiralle         ###   ########.fr        #
+#    Updated: 2017/12/06 17:20:21 by rmiralle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME = libft.a
 
 SRC =	ft_atoi.c\
 		ft_bzero.c\
+		ft_countword.c\
 		ft_isalnum.c\
 		ft_isalpha.c\
 		ft_isascii.c\
@@ -40,6 +41,7 @@ SRC =	ft_atoi.c\
 		ft_strchr.c\
 		ft_strclr.c\
 		ft_strcmp.c\
+		ft_strsplit.c\
 		ft_strcpy.c\
 		ft_strdup.c\
 		ft_strequ.c\
@@ -55,7 +57,8 @@ SRC =	ft_atoi.c\
 		ft_strnew.c\
 		ft_strtrim.c\
 		ft_tolower.c\
-		ft_toupper.c
+		ft_toupper.c\
+		ft_strsub.c
 
 OBJ = ${SRC:.c=.o}
 
