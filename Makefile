@@ -6,7 +6,7 @@
 #    By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 15:25:02 by rmiralle          #+#    #+#              #
-#    Updated: 2017/12/06 17:20:21 by rmiralle         ###   ########.fr        #
+#    Updated: 2017/12/11 18:46:21 by rmiralle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SRC =	ft_atoi.c\
 		ft_isascii.c\
 		ft_isdigit.c\
 		ft_isprint.c\
+		ft_itoa.c\
 		ft_memalloc.c\
 		ft_memcpy.c\
 		ft_memccpy.c\
