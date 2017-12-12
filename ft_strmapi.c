@@ -6,7 +6,7 @@
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/03 11:42:03 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/12/03 11:58:48 by rmiralle         ###   ########.fr       */
+/*   Updated: 2017/12/12 16:51:51 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	while (s[i])
 	{
-		fraiche[i] = f(i, (const char)s[i]);
+		fraiche[i] = f(i, s[i]);
 		i++;
 	}
 	return (fraiche);

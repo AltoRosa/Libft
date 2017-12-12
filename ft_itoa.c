@@ -6,14 +6,13 @@
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/11 13:27:45 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/12/11 18:47:58 by rmiralle         ###   ########.fr       */
+/*   Updated: 2017/12/12 16:54:08 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int		ft_countint(int n)
+static int	ft_countint(int n)
 {
 	int i;
 
@@ -31,7 +30,7 @@ int		ft_countint(int n)
 	return (i);
 }
 
-void	ft_fillfraiche(int n, char *fraiche)
+static void	ft_fillfraiche(int n, char *fraiche)
 {
 	int	i;
 	int	drapeau;
@@ -55,7 +54,7 @@ void	ft_fillfraiche(int n, char *fraiche)
 	fraiche[i] = '\0';
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	int		i;
 	char	*fraiche;

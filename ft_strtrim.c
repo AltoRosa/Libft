@@ -6,13 +6,13 @@
 /*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/03 12:00:56 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/12/03 19:14:12 by rmiralle         ###   ########.fr       */
+/*   Updated: 2017/12/12 17:09:43 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_cpy(const char *s, int a, int b, int nb)
+static char	*ft_cpy(const char *s, int a, int b, int nb)
 {
 	char	*fraiche;
 
@@ -29,7 +29,7 @@ char	*ft_cpy(const char *s, int a, int b, int nb)
 	return (fraiche);
 }
 
-char	*ft_strtrim(char const *s)
+char		*ft_strtrim(char const *s)
 {
 	int		a;
 	int		b;

@@ -6,7 +6,7 @@
 #    By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 15:25:02 by rmiralle          #+#    #+#              #
-#    Updated: 2017/12/11 18:46:21 by rmiralle         ###   ########.fr        #
+#    Updated: 2017/12/12 17:07:12 by rmiralle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ SRC =	ft_atoi.c\
 		ft_itoa.c\
 		ft_memalloc.c\
 		ft_memcpy.c\
+		ft_memcmp.c\
 		ft_memccpy.c\
 		ft_memchr.c\
 		ft_memdel.c\
@@ -38,8 +39,10 @@ SRC =	ft_atoi.c\
 		ft_putstr.c\
 		ft_putstr_fd.c\
 		ft_strcat.c\
+		ft_strdel.c\
 		ft_strncat.c\
 		ft_strchr.c\
+		ft_strrchr.c\
 		ft_strclr.c\
 		ft_strcmp.c\
 		ft_strsplit.c\
@@ -50,11 +53,14 @@ SRC =	ft_atoi.c\
 		ft_striter.c\
 		ft_striteri.c\
 		ft_strjoin.c\
+		ft_strlcat.c\
 		ft_strlen.c\
 		ft_strmap.c\
 		ft_strmapi.c\
 		ft_strncmp.c\
 		ft_strncpy.c\
+		ft_strstr.c\
+		ft_strnstr.c\
 		ft_strnew.c\
 		ft_strtrim.c\
 		ft_tolower.c\
