@@ -1,28 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_swaop.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmiralle <rmiralle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/04 17:11:24 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/12/14 17:02:44 by rmiralle         ###   ########.fr       */
+/*   Created: 2017/12/14 16:49:44 by rmiralle          #+#    #+#             */
+/*   Updated: 2017/12/14 16:51:46 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	*ft_memmove(void *dst, const void *src, size_t n)
+void     ft_swaop(int *a, int *b)
 {
-	size_t	i;
-	char	tmp[n];
+    int o;
 
-	i = 0;
-	ft_memcpy(tmp, src, n);
-	while (i < n)
-	{
-		((char *)dst)[i] = tmp[i];
-		i++;
-	}
-	return (dst);
+    o = *a;
+    *a = *b;
+    *b = o;
 }
