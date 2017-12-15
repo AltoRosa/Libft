@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: rmiralle <rmiralle@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 15:25:02 by rmiralle          #+#    #+#              #
-#    Updated: 2017/12/12 17:07:12 by rmiralle         ###   ########.fr        #
+#    Updated: 2017/12/15 18:28:51 by rmiralle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,8 @@ SRC =	ft_atoi.c\
 		ft_strtrim.c\
 		ft_tolower.c\
 		ft_toupper.c\
-		ft_strsub.c
+		ft_strsub.c\
+		ft_swaop.c\
 
 OBJ = ${SRC:.c=.o}
 

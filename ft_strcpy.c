@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmiralle <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rmiralle <rmiralle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 23:38:14 by rmiralle          #+#    #+#             */
-/*   Updated: 2017/11/23 16:24:25 by rmiralle         ###   ########.fr       */
+/*   Updated: 2017/12/15 18:32:35 by rmiralle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dst, char *src)
+char	*ft_strcpy(char *dst, const char *src)
 {
 	int	i;
 
